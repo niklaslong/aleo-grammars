@@ -179,22 +179,22 @@ register-access = register *register-accessor
 
 signed-literal = [ "-" ] 1*( digit *"_" ) signed-type
 
-unsigned-literal = [ "-" ] 1*( digit *"_" ) unsigned-type
+unsigned-literal = 1*( digit *"_" ) unsigned-type
 
 integer-literal = signed-literal / unsigned-literal
 
-field-literal = [ "-" ] 1*( digit *"_" ) field-type
+field-literal = 1*( digit *"_" ) field-type
 
-group-literal = [ "-" ] 1*( digit *"_" ) group-type
+group-literal = 1*( digit *"_" ) group-type
 
-scalar-literal = [ "-" ] 1*( digit *"_" ) scalar-type
+scalar-literal = 1*( digit *"_" ) scalar-type
 
 arithmetic-literal = integer-literal
                    / field-literal
                    / group-literal
                    / scalar-literal
 
-u32-literal = [ "-" ] 1*( digit *"_" ) %s"u32"
+u32-literal = 1*( digit *"_" ) %s"u32"
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
